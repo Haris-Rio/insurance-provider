@@ -15,7 +15,7 @@ import org.springframework.web.bind.annotation.RestController;
 @RequestMapping("/insurance-service")
 public class InsuranceProviderApplication {
 	
-	@GetMapping("/getUpdate")
+	@GetMapping("/getUptodate")
 	public List<String> getPlans(){
 		return Stream.of("Arasangam","Narashimma","Gajendra").collect(Collectors.toList());
 	}
